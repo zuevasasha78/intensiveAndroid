@@ -28,5 +28,12 @@ class MainActivity : AppCompatActivity() {
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_nav_view)
         bottomNav?.setupWithNavController(navController)
     }
+
+    companion object {
+        private val TAG = MainActivity::class.java.simpleName
+        private val API_KEY = BuildConfig.THE_MOVIE_DATABASE_API
+    }
 }
+
+
 
