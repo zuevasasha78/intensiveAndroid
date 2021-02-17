@@ -4,10 +4,17 @@
     android:layout_height="match_parent"
     tools:context="ru.mikhailskiy.intensiv.ui.tvshows.TvShowsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tv_show_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="@color/colorPrimary"
+
+
+        android:overScrollMode="never"
+        android:scrollbars="vertical" />
+    android:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    android:layout_behavior="@string/appbar_scrolling_view_behavior"
 
 </FrameLayout>
